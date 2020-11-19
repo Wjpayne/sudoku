@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+    background-color: #282c34;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 2rem
+   
+    
+}
+
+.field {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    text-align: center;
+    color: darkgrey;
+    outline: none;
+}
+
+.field[readonly] {
+    color: black;
+
+}
+
+.board-container {
+   text-align: center;
+   padding-top: 100px;
+
+}
