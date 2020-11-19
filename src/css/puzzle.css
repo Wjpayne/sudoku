@@ -23,6 +23,7 @@ header {
     text-align: center;
     color: darkgrey;
     outline: none;
+    
 }
 
 .field[readonly] {
@@ -34,4 +35,13 @@ header {
    text-align: center;
    padding-top: 100px;
 
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 30px;
+    margin-top: 10px;
 }
