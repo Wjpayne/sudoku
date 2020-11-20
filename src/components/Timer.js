@@ -1,13 +1,36 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class Timer extends Component {
-    render() {
-        return (
-            <div>
+  constructor(props) {
+    super(props);
+    this.state = {
+      elapsed: 0,
+    };
+  }
 
-        <h2>Time: {}</h2>
-                
-            </div>
-        )
-    }
+  componentDidMount() {
+    this.interval = setInterval(() => {
+      this.setState({
+        elapsed: Math.floor(
+          (new Date().getTime() - this.props.start.getTime()) / 1000
+        ),
+      });
+    });
+  }
+
+  componentWillUnmount() {
+    delete this.interval;
+  }
+  render() {
+    const { elapsed } = this.state;
+    return (
+      <div>
+        <h2>Time: {elapsed}</h2>
+      </div>
+    );
+  }
 }
+
+
+  
+// 

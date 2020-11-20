@@ -23,11 +23,17 @@ header {
     text-align: center;
     color: darkgrey;
     outline: none;
+    border-radius: 5px;
+    margin: 1px;
     
+}
+.field:nth-child(3n +1) {
+    margin-left: 10px;
 }
 
 .field[readonly] {
     color: black;
+    background-color:lightgrey;
 
 }
 
@@ -44,4 +50,12 @@ button {
     cursor: pointer;
     font-size: 30px;
     margin-top: 10px;
+}
+
+
+
+
+.row:nth-child(3n +1) {
+    /* padding-top:10px; */
+    margin-bottom: 10px;
 }
